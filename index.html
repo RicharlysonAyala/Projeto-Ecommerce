@@ -10,16 +10,19 @@
 <body>
     <header>
         <h1 class="logo">RTR</h1>
-        <input type="text" name="barra de pesquisa da navbar" class="pesquisa da navbar" placeholder="Faça sua busca"required>
+        <div id="pesquisa-navbar">
+            <input type="text" name="barra-de-pesquisa-da-navbar" id="pesquisa" placeholder="O que você está procurando?" required>
+            <input type="submit" value="Lupa" id="lupa">
+        </div>
         <div class="links">
-            <ul class= "nav itens"> 
+            <ul class="nav-itens"> 
                 <li><a href="#">Suporte</a></li>
                 <li><a href="#">Carrinho</a></li>
                 <li><a href="#">Lista de desejos</a></li>
             </ul>
         </div>
     </header>
-    <div class="botão">
+    <div class="botao">
         <button href="#" class="login">login</button>
         <button href="#" class="cadastro">cadastro</button>
     </div>
