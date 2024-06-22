@@ -1,8 +1,81 @@
+/* Estilos Gerais */
 * {
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* Navbar */
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: #174691;
+    padding: 0 2rem;
+    justify-content: space-between;
+}
+
+
+/* Logo */
+header h1 {
+    color: #fafafa;
+}
+
+
+/* Procurar */
+#pesquisa-navbar {
+    display: flex;
+    gap: 0;
+}
+
+input {
+    border: none;
+}
+
+#pesquisa {
+    width: 500px;
+    padding: 0.7rem 1.5rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    font-size: 1rem;
+    background-color: #fafafa;
+}
+
+#lupa {
+    background-color: #fafafa;
+    width: 50px;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    color: #113a7a;
+    transition: 0.3s;
+}
+
+#lupa:hover {
+    background-color: #113a7a;
+    color: #fafafa;
+}
+
+/* Links */
+.nav-itens {
+    display: flex;
+    gap: 1.5rem;
+    
+}
+
+.nav-itens li a {
+    color: #fafafa;
+    font-weight: bold;
+    font-size: 1.05rem;
+    padding: 5px 0 3px;
+    border-bottom: 2px solid transparent;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.nav-itens li a:hover {
+    border-bottom: 2px solid #fafafa;
 }
