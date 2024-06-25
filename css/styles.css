@@ -64,6 +64,7 @@ button {
     color: #fafafa;
 }
 
+
 /* Links */
 .nav-itens {
     display: flex;
@@ -87,6 +88,27 @@ button {
     padding-left: 0.5rem;
 }
 
+
+/* Bolinha do carrinho */
+#carrinho {
+    position: relative;
+}
+
+#bolinha-carrinho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -8px;
+    right: -7px;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 1rem;
+    background-color: #f7f332;
+    pointer-events: none;
+}
+
+
 /* Icones */
 .fa-user,
 .fa-cart-shopping,
@@ -106,6 +128,10 @@ button {
 .fa-cart-shopping:hover,
 .fa-heart:hover {
     opacity: 0.7;
+}
+
+.fa-cart-shopping {
+    font-size: 1.2rem;
 }
 
 
@@ -150,3 +176,23 @@ main {
     font-weight: bold;
 }
 
+
+/* Lado direito */
+#lado-direito {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#title {
+    margin-top: 1rem;
+}
+
+#paragrafo {
+    margin: 1rem 0 2rem;
+    color: #333;
+}
+
+.produto {
+    
+}
