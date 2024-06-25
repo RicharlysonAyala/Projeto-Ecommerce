@@ -36,6 +36,10 @@ input {
     border: none;
 }
 
+button {
+    border: none;
+}
+
 #pesquisa {
     width: 500px;
     padding: 0.7rem 1.5rem;
@@ -52,6 +56,7 @@ input {
     border-bottom-right-radius: 2rem;
     color: #113a7a;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 #lupa:hover {
