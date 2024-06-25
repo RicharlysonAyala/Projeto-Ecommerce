@@ -178,21 +178,30 @@ main {
 
 
 /* Lado direito */
-#lado-direito {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
 #title {
-    margin-top: 1rem;
+    margin: 1rem 0 0.5rem;
 }
 
 #paragrafo {
-    margin: 1rem 0 2rem;
     color: #333;
+    margin-bottom: 2rem;
+}
+
+#produtos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
 }
 
 .produto {
-    
+    width: 300px;
+}
+
+.produto img {
+    margin-bottom: 0.3rem;
+}
+
+.produto h3 {
+    font-weight: 400;
+    margin-bottom: 0.8rem;
 }
