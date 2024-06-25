@@ -57,6 +57,7 @@ button {
     color: #113a7a;
     transition: 0.3s;
     cursor: pointer;
+    font-size: 1rem;
 }
 
 #lupa:hover {
@@ -67,8 +68,6 @@ button {
 /* Links */
 .nav-itens {
     display: flex;
-    gap: 1.5rem;
-    
 }
 
 .nav-itens li a {
@@ -83,4 +82,29 @@ button {
 
 .nav-itens li a:hover {
     border-bottom: 2px solid #fafafa;
+}
+
+.nav-itens li {
+    padding-left: 0.5rem;
+}
+
+/* Icones */
+.fa-user,
+.fa-cart-shopping,
+.fa-heart {
+    color: #fafafa;
+    cursor: pointer;
+    transition: 0.5s;
+    padding-top: 2px;
+}
+
+.fa-cart-shopping,
+.fa-heart {
+    padding-left: 1.5rem;
+}
+
+.fa-user:hover,
+.fa-cart-shopping:hover,
+.fa-heart:hover {
+    opacity: 0.7;
 }
