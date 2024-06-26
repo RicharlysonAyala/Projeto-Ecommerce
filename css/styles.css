@@ -88,6 +88,10 @@ button {
     padding-left: 0.5rem;
 }
 
+#lista-de-desejos {
+    cursor: pointer;
+}
+
 
 /* Bolinha do carrinho */
 #carrinho {
@@ -132,6 +136,43 @@ button {
 
 .fa-cart-shopping {
     font-size: 1.2rem;
+}
+
+
+/* Subnavbar */
+#sub-bar ul {
+    height: 40px;
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#sub-bar ul li {
+    color: #555;
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+
+#sub-bar ul li:hover {
+    color: #174691;
+}
+
+
+/* Barra de anuncio */
+#barra-de-anuncio {
+    height: 50px;
+    background-color: #113a7a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+}
+
+#barra-de-anuncio span {
+    color: #f9fc49
 }
 
 
@@ -191,10 +232,12 @@ main {
     display: flex;
     flex-wrap: wrap;
     padding: 1rem;
+    gap: 1.5rem;
 }
 
 .produto {
     width: 300px;
+    position: relative;
 }
 
 .produto img {
@@ -202,6 +245,47 @@ main {
 }
 
 .produto h3 {
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.produto p {
+    font-weight:900;
+    color: #444;
+    font-size: 1.5rem;
+}
+
+.produto .sub-paragrafo {
+    font-size: 0.8rem;
+    font-weight: 100;
+    color: #777;
+}
+
+.produto h4 {
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.agrupamento-desejo {
+    position: absolute;
+    top: 5px;
+    right: 40px;
+    border-radius: 2rem;
+    transition: 0.5s;
+}
+
+.agrupamento-desejo:hover {
+    background-color: #d1cece;
+}
+
+.coracao-desejo.fa-heart {
+    color: #555;
+    font-size: 1.3rem;
+    padding: 6px;
+}
+
+.coracao-desejo.fa-heart:hover {
+    opacity: 1;
 }
