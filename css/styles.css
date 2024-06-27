@@ -153,6 +153,7 @@ button {
     color: #555;
     font-size: 1.2rem;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 #sub-bar ul li:hover {
@@ -288,4 +289,81 @@ main {
 
 .coracao-desejo.fa-heart:hover {
     opacity: 1;
+}
+
+.add-carrinho {
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: #174691;
+    color: #fafafa;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: 0.5s;
+}
+
+.add-carrinho:hover {
+    color: #174691;
+    background-color: #fafafa;
+    border: 1px solid #174691;
+}
+
+
+/* footer */
+footer {
+    background-color: #113a7a;
+    margin-top: 7rem;
+    color: #fafafa;
+}
+
+#footer-contatos {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#footer-contatos p {
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+}
+.footer-icon {
+    font-size: 1.4rem;
+    color: #fafafa;
+    transition: 0.5s;
+}
+
+#midia-social-footer {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.footer-icon:hover {
+    opacity: 0.6;
+}
+
+#footer-list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+}
+
+#footer-list a {
+    color: #fafafa;
+    padding: 5px 0 3px;
+    border-bottom: 2px solid transparent;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+#footer-list a:hover {
+    border-bottom: 2px solid #fafafa;
+}
+
+#footer-copyright {
+    padding: 1rem 0;
+    text-align: center;
 }
