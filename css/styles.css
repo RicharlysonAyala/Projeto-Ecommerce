@@ -325,8 +325,12 @@ footer {
 
 #footer-contatos p {
     font-size: 1.1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
     padding-top: 0.5rem;
+    width: 50%;
+    margin: 0.5rem auto 1rem;
+    border: 1px solid #fafafa;
+    border-radius: 1.5rem;
 }
 .footer-icon {
     font-size: 1.4rem;
