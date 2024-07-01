@@ -8,6 +8,109 @@
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+
+/* Carrinho-Bar */
+#bar-car {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #fff;
+    right: 0px;
+    height: 100vh;
+    width: 300px;
+    z-index: 1;
+    transition: 0.5s;
+    display: none;
+}
+
+#bar-car h2 {
+    text-align: center;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 1.3rem;
+}
+
+#bar-car-produts {
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#bar-car-produts p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.bar-car-produt {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+.bar-car-produt img {
+    width: 60px;
+    height: 50px;
+}
+
+.info-produt-bar {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.info-produt-bar p {
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    text-align: start;
+}
+
+.info-produt-bar h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: #777;
+    font-weight: bolder;
+    font-size: 1rem;
+    text-align: start;
+    margin-top: 0.5rem;
+}
+
+#bar-car #price-bar {
+    font-size: 1.2rem;
+    text-transform: none;
+    margin-top: 2rem;
+}
+
+#bar-car-finish {
+    display: flex;
+    align-items: flex-end;
+    background-color: #fff;
+    margin: 2rem auto;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #113a7a;
+    padding: 1rem 4rem;
+    color: #fff;
+    font-style: italic;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#bar-car-finish:hover {
+    background-color: #0c2e66;
+}
+
+
 /* Navbar */
 header {
     height: 80px;
