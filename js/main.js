@@ -10,5 +10,5 @@ iconeCarrinho.addEventListener('click', () => {
 
 fechar.addEventListener('click', () => {
     listCar.style.display = "none";
-    body.style.overflow = "none"
+    body.style.overflow = "scroll"
 })
