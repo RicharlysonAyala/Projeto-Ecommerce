@@ -38,8 +38,8 @@ form.addEventListener('submit', (e) => {
 
     class Login {
         constructor(nome,senha) {
-            this.nome;
-            this.senha
+            this.nome = nome;
+            this.senha = nome;
         }
     }
 
