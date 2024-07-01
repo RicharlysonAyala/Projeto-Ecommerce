@@ -8,6 +8,12 @@
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+main {
+    margin: 8rem auto 11rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
 
 /* Navbar */
 header {
@@ -16,7 +22,7 @@ header {
     align-items: center;
     background-color: #174691;
     padding: 0 2.5rem;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 
@@ -25,4 +31,130 @@ header a {
     color: #fafafa;
     font-size: 2rem;
     font-weight: bold;
+}
+
+
+/* Parte do login */
+main form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    color: #113a7a;
+    margin-bottom: 1rem;
+}
+
+main form input[type="text"],
+main form input[type="password"],
+#cadastro-btn,
+#login-btn {
+    padding: 1rem 1.5em;
+    width: 350px;
+    margin: 0 auto 1rem;
+    border: none;
+    border: 1px solid #113a7a;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+main form input[type="text"]::placeholder,
+main form input[type="password"]::placeholder {
+    color: #113a7a;
+}
+
+main #cadastro input[type="text"],
+main #cadastro input[type="password"] {
+    background-color: #113a7a;
+    border: 1px solid #113a7a;
+    color: #fafafa;
+    font-size: 0.9rem;
+}
+
+main #cadastro input[type="text"]::placeholder,
+main #cadastro input[type="password"]::placeholder {
+    color: #fafafa;
+}
+
+main form input[type="text"]:focus,
+main form input[type="password"]:focus {
+    border: 2px solid #113a7a;
+}
+
+#cadastro-btn {
+    cursor: pointer;
+    color: #113a7a;
+    transition: 0.4s;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+#login-btn {
+    background-color: #113a7a;
+    color: #fafafa;
+    cursor: pointer;
+    transition: 0.4s;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+#cadastro-btn:hover {
+    background-color: #113a7a;
+    color: #fafafa;
+    
+}
+
+#login-btn:hover {
+    background-color: #fafafa;
+    color: #113a7a;
+    border: 1px solid #113a7a;
+}
+
+#login {
+    padding-right: 3rem;
+    border-right: 0.12rem solid #ccc;
+}
+
+
+/* footer */
+footer {
+    background-color: #113a7a;
+    margin-top: 7rem;
+    color: #fafafa;
+}
+
+#footer-contatos {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#footer-contatos p {
+    font-size: 1.1rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    width: 50%;
+    margin: 0.5rem auto 1rem;
+    border: 1px solid #fafafa;
+    border-radius: 1.5rem;
+}
+.footer-icon {
+    font-size: 1.4rem;
+    color: #fafafa;
+    transition: 0.5s;
+}
+
+#midia-social-footer {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.footer-icon:hover {
+    opacity: 0.6;
+}
+
+#footer-copyright {
+    padding: 1rem 0;
+    text-align: center;
 }

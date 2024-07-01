@@ -15,6 +15,28 @@
     />
 </head>
 <body>
+    <div id="bar-car">
+        <h2>Carrinho</h2>
+        <div id="bar-car-produts">
+            <p>Nenhum produto no carrinho</p>
+            <div class="bar-car-produt">
+                <img src="./img/download.png" alt="">
+                <div class="info-produt-bar">
+                    <p>Estrutura para prédios 40x40</p>
+                    <h3>R$12,00</h3>
+                </div>
+            </div>
+            <div class="bar-car-produt">
+                <img src="./img/download.png" alt="">
+                <div class="info-produt-bar">
+                    <p>Estrutura para prédios 40x40</p>
+                    <h3>R$12,00</h3>
+                </div>
+            </div>
+        </div>
+        <h2 id="price-bar">Subtotal: R$<span id="price-bar-car">00,00</span></h2>
+        <button id="bar-car-finish">Finalizar</button>
+    </div>
     <header>
         <h1 class="logo">RTR</h1>
         <div id="pesquisa-navbar">
@@ -26,6 +48,7 @@
                 <i class="fa-regular fa-user"></i>
                 <li><a id="usuario" href="./rotas/login.html">Login</a></li>
                 <i class="fa-regular fa-heart"></i>
+                <!-- <i class="fa-solid fa-heart"></i> -->
                 <li><a id="lista-de-desejos">Lista de desejos</a></li>
                 <div id="carrinho">
                     <i class="fa-solid fa-cart-shopping"></i>
@@ -36,11 +59,11 @@
     </header>
     <div id="sub-bar">
       <ul>
-        <li>TESTE 1</li>
-        <li>TESTE 2</li>
-        <li>TESTE 3</li>
-        <li>TESTE 4</li>
-        <li> TESTE 5</li>
+        <li id="patrocinio-sub">PATROCINADORES</li>
+        <li>VLÂNDIA</li>
+        <li>KI DINDIN</li>
+        <li>CHOCOMARX</li>
+        <li>VILA DOS SMURFS</li>
       </ul>
     <div id="barra-de-anuncio">
         <h3><span>10%</span> de desconto pra quem saber o que é <span>algoritmo</span></h3>
@@ -48,39 +71,27 @@
     <main>
         <div id="lado-esquerdo">
             <div class="especifico">
-                <p>especifico 1</p>
+                <p>Mais caro</p>
                 <p class="cruz">+</p>
             </div>
             <div class="especifico">
-                <p>especifico 2</p>
+                <p>Mais barato</p>
                 <p class="cruz">+</p>
             </div>
             <div class="especifico">
-                <p>especifico 3</p>
+                <p>HTML</p>
                 <p class="cruz">+</p>
             </div>
             <div class="especifico">
-                <p>especifico 4</p>
+                <p>CSS</p>
                 <p class="cruz">+</p>
             </div>
             <div class="especifico">
-                <p>especifico 5</p>
+                <p>Java Script</p>
                 <p class="cruz">+</p>
             </div>
             <div class="especifico">
-                <p>especifico 6</p>
-                <p class="cruz">+</p>
-            </div>
-            <div class="especifico">
-                <p>especifico 7</p>
-                <p class="cruz">+</p>
-            </div>
-            <div class="especifico">
-                <p>especifico 8</p>
-                <p class="cruz">+</p>
-            </div>
-            <div class="especifico">
-                <p>especifico 9</p>
+                <p>Padrão</p>
                 <p class="cruz">+</p>
             </div>
         </div>
@@ -94,9 +105,10 @@
                     <p class="sub-paragrafo">A partir de </p>
                     <p>R$ 12,00</p>
                     <h4>pra html R$ 10,00 </h4>
-                    <button class="add-carrinho">adicionar ao carrinho</button>
+                    <button class="add-carrinho">Adicionar ao carrinho</button>
                     <div class="agrupamento-desejo">
                         <i class="fa-regular fa-heart coracao-desejo"></i>
+                        <!-- <i class="fa-solid fa-heart coracao-desejo"></i> -->
                     </div>
                 </div>
                 <div class="produto">
@@ -105,9 +117,10 @@
                     <p class="sub-paragrafo">A partir de </p>
                     <p>$12,00</p>
                     <h4>pra html R$ 10,00 </h4>
-                    <button class="add-carrinho">adicionar ao carrinho</button>
+                    <button class="add-carrinho">Adicionar ao carrinho</button>
                     <div class="agrupamento-desejo">
                         <i class="fa-regular fa-heart coracao-desejo"></i>
+                    </div>
                 </div>
                 <div class="produto">
                     <img src="img/download.png" alt="a">
@@ -115,9 +128,10 @@
                     <p class="sub-paragrafo">A partir de </p>
                     <p>$12,00</p>
                     <h4>pra html R$ 10,00 </h4>
-                    <button class="add-carrinho">adicionar ao carrinho</button>
+                    <button class="add-carrinho">Adicionar ao carrinho</button>
                     <div class="agrupamento-desejo">
                         <i class="fa-regular fa-heart coracao-desejo"></i>
+                    </div>
                 </div>
                 <div class="produto">
                     <img src="img/download.png" alt="a">
@@ -125,9 +139,10 @@
                     <p class="sub-paragrafo">A partir de </p>
                     <p>$12,00</p>
                     <h4>pra html R$ 10,00 </h4>
-                    <button class="add-carrinho">adicionar ao carrinho</button>
+                    <button class="add-carrinho">Adicionar ao carrinho</button>
                     <div class="agrupamento-desejo">
                         <i class="fa-regular fa-heart coracao-desejo"></i>
+                    </div>
                 </div>
                 <div class="produto">
                     <img src="img/download.png" alt="a">
@@ -135,9 +150,10 @@
                     <p class="sub-paragrafo">A partir de </p>
                     <p>$12,00</p>
                     <h4>pra html R$ 10,00 </h4>
-                    <button class="add-carrinho">adicionar ao carrinho</button>
+                    <button class="add-carrinho">Adicionar ao carrinho</button>
                     <div class="agrupamento-desejo">
                         <i class="fa-regular fa-heart coracao-desejo"></i>
+                    </div>
                 </div>
                 <div class="produto">
                     <img src="img/download.png" alt="a">
@@ -145,9 +161,10 @@
                     <p class="sub-paragrafo">A partir de </p>
                     <p>$12,00</p>
                     <h4>pra html R$ 10,00 </h4>
-                    <button class="add-carrinho">adicionar ao carrinho</button>
+                    <button class="add-carrinho">Adicionar ao carrinho</button>
                     <div class="agrupamento-desejo">
-                        <i class="fa-regular fa-heart coracao-desejo"></i>                
+                        <i class="fa-regular fa-heart coracao-desejo"></i>
+                    </div>                
                 </div>
                 <div class="produto">
                     <img src="img/download.png" alt="a">
@@ -155,9 +172,10 @@
                     <p class="sub-paragrafo">A partir de </p>
                     <p>$12,00</p>
                     <h4>pra html R$ 10,00 </h4>
-                    <button class="add-carrinho">adicionar ao carrinho</button>
+                    <button class="add-carrinho">Adicionar ao carrinho</button>
                     <div class="agrupamento-desejo">
                         <i class="fa-regular fa-heart coracao-desejo"></i>
+                    </div>
                 </div>
                 <div class="produto">
                     <img src="img/download.png" alt="a">
@@ -165,9 +183,10 @@
                     <p class="sub-paragrafo">A partir de </p>
                     <p>$12,00</p>
                     <h4>pra html R$ 10,00 </h4>
-                    <button class="add-carrinho">adicionar ao carrinho</button>
+                    <button class="add-carrinho">Adicionar ao carrinho</button>
                     <div class="agrupamento-desejo">
                         <i class="fa-regular fa-heart coracao-desejo"></i>
+                    </div>
                 </div>
                 <div class="produto">
                     <img src="img/download.png" alt="a">
@@ -175,50 +194,42 @@
                     <p class="sub-paragrafo">A partir de </p>
                     <p>$12,00</p>
                     <h4>pra html R$ 10,00 </h4>
-                    <button class="add-carrinho">adicionar ao carrinho</button>
+                    <button class="add-carrinho">Adicionar ao carrinho</button>
                     <div class="agrupamento-desejo">
                         <i class="fa-regular fa-heart coracao-desejo"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
     <footer>
-        <div id="footer">
-         <div id="footer-contatos">
+        <div id="footer-contatos">
             <h1 class="logo-footer">RTR</h1>
-            <p>Não é linguagem de programação que define o programador,mas sim sua lógica</p>
+            <p>Não é linguagem de programação que define o programador, mas sim sua lógica</p>
             <div id="midia-social-footer">
-                <a href="#" class="footer-icon" id="instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                 </a>
-                 <a href="#" class="foote-icon" id="facebook">
+                <a href="https://github.com/RicharlysonAyala/Projeto-Ecommerce" target="_blank" class="footer-icon" id="github">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://pt.memedroid.com/memes/detail/2487000/quem-tem-face" target="_blank" class="footer-icon" id="facebook">
                     <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
         </div>
-        <ul class="footer-list">
-            <li>
-                <h4>Institucional</h4>
-            </li>
-            <li><a href="#" class="footer-link">teste1</a></li>
-            <li><a href="#" class="footer-link">teste2</a></li>
-            <li><a href="#" class="footer-link">teste3</a></li>
-        </ul>
-        <ul class="footer-list">
-            <li>
-                <h4>Ajuda</h4>
-            </li>
-            <li><a href="#" class="footer-link">teste4</a></li>
-            <li><a href="#" class="footer-link">teste5</a></li>
-            <li><a href="#" class="footer-link">teste6</a></li>
-        </ul>
-        <div class="footer-copyright">
+        <div id="footer-list">
+            <a href="https://www.instagram.com/rickkayala__/" target="_blank">
+                <h4>Ricki</h4>
+            </a>
+            <a href="https://www.instagram.com/thaina_sous/" target="_blank">
+                <h4>Thaina</h4>
+            </a>
+            <a href="https://www.instagram.com/ryann.xy2/" target="_blank">
+                <h4>Ryan</h4>
+            </a>
+        </div>
+        <div id="footer-copyright">
             &#169
-            copyright 2024 RTR all rights reserved
+            copyright 2024 RTR todo direitos reservados, se vim roubar vou chamar severo!!
         </div>
-        
-  
-
-
-        
     </footer>
 </body>
 </html>
