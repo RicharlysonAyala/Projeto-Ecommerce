@@ -23,7 +23,7 @@ const senhaValue = senhaInput.value;
 const nomeLoginValue = nomeLogin.value;
 const senhaLoginvalue = senhaLogin.value;
 
-logins = [
+const logins = [
     {
         nome: "Valter",
         senha: "123"
