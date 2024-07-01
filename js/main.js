@@ -1,2 +1,4 @@
-const IconeCarrinho = document.querySelector('fa-cart-shopping');
-const ListCar = document.querySelector('bar-car');
+const iconeCarrinho = document.querySelector('.fa-cart-shopping');
+const listCar = document.querySelector('#bar-car');
+
+listCar.style.display = "flex";
