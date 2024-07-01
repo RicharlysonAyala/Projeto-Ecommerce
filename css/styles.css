@@ -252,6 +252,12 @@ button {
     gap: 1rem;
 }
 
+#sub-bar ul #patrocinio-sub {
+    color: #113a7a;
+    border-right: 1px solid #113a7a;
+    padding: 0 1rem;
+}
+
 #sub-bar ul li {
     color: #555;
     font-size: 1.2rem;
