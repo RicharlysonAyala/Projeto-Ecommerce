@@ -1,11 +1,12 @@
 const form = document.querySelector('#form');
-const nomeInput = document.getElementsByClassName('entrada-de-nome');
-const senhaInput = document.getElementsByClassName('entrada-de-senha');
-const nomeLogin = document.getElementsByClassName('entrada-do-nome-login');
-const senhaLogin = document.getElementsByClassName('entrada-da-senha-login');
+const nomeInput = document.getElementsByClassName('.entrada-de-nome');
+const senhaInput = document.getElementsByClassName('.entrada-de-senha');
+const nomeLogin = document.getElementsByClassName('.entrada-do-nome-login');
+const senhaLogin = document.getElementsByClassName('.entrada-da-senha-login');
 
 const url = '../index.html'
-const btn = document.getElementById('btn');
+const btnCadastro = document.getElementById('btn');
+const
 
 // Função btn | add um evento para o btn
 function openInNewTab(url){
@@ -23,18 +24,11 @@ const senhaValue = senhaInput.value;
 const nomeLoginValue = nomeLogin.value;
 const senhaLoginvalue = senhaLogin.value;
 
-logins = [
-    {
-        nome: "Valter",
-        senha: "123"
-    }
-]
-
 // Add um evento para o form | validação de formulário
 form.addEventListener('submit', (e) => {
 
     // Para que a pgn não fique atualizando ao clicar
-    e.preventDefault
+    e.preventDefault()
 
     class Login {
         constructor(nome,senha) {
@@ -56,7 +50,7 @@ form.addEventListener('submit', (e) => {
         alert('Preencha os campos de cadastro')
     }
     if(nomeLogin.length > 0 && senhaLogin.length > 0) {
-       openInNewTab
+       openInNewTab()
     } else {
         alert('Preencha os campos de login')
     }
