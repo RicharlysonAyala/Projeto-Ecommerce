@@ -1,8 +1,8 @@
 const form = document.querySelector('#form');
-const nomeInput = document.getElementsByClassName('entrada-de-nome');
-const senhaInput = document.getElementsByClassName('entrada-de-senha');
-const nomeLogin = document.getElementsByClassName('entrada-do-nome-login');
-const senhaLogin = document.getElementsByClassName('entrada-da-senha-login');
+const nomeInput = document.getElementsByClassName('.entrada-de-nome');
+const senhaInput = document.getElementsByClassName('.entrada-de-senha');
+const nomeLogin = document.getElementsByClassName('.entrada-do-nome-login');
+const senhaLogin = document.getElementsByClassName('.entrada-da-senha-login');
 
 const url = '../index.html'
 const btn = document.getElementById('btn');
