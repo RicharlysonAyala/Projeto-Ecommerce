@@ -14,8 +14,9 @@ const lupa = document.querySelector("#lupa")
 
 let valueInput;
 
-console.log(lupa)
+const iconeCoracaoVazio = document.querySelectorAll(".coracao-desejo")
 
+console.log(iconeCoracaoVazio);
 
 // Evento de abrir a barra
 iconeCarrinho.addEventListener('click', () => {
@@ -67,3 +68,12 @@ lupa.addEventListener("click", () => {
     
     procurarProdutos(valueInput);
 });
+
+
+// Funcionalidade do coração
+iconeCoracaoVazio.forEach((coracaoVazio) => {
+    coracaoVazio.addEventListener("click", (e) => {
+        e.target.classList.toggle("fa-regular");
+        e.target.classList.toggle("fa-solid");
+    })
+})
