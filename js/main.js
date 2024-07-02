@@ -20,6 +20,8 @@ const listaDesejos = document.querySelector("#lista-de-desejos");
 const coracaoDesejo = document.querySelector("#coracao-lista-desejo");
 const paragrafo = document.querySelector("#paragrafo");
 
+const especificos = document.querySelectorAll(".especifico");
+
 
 // Evento de abrir a barra
 iconeCarrinho.addEventListener('click', () => {
@@ -27,7 +29,7 @@ iconeCarrinho.addEventListener('click', () => {
     listCar.classList.add("abrir")
     body.style.overflow = "hidden"
     listCar.style.display = "flex"
-})
+});
 
 // Evento de fechar a barra
 fechar.addEventListener('click', () => {
@@ -37,7 +39,7 @@ fechar.addEventListener('click', () => {
     setTimeout(() => {
         listCar.style.display = "none"
     }, 459);
-})
+});
 
 
 // Procurar produtos
@@ -77,13 +79,13 @@ lupa.addEventListener("click", () => {
 const trocaCoracao = (value) => {
     value.classList.toggle("fa-regular");
     value.classList.toggle("fa-solid");
-}
+};
 
 iconeCoracaoVazio.forEach((coracaoVazio) => {
     coracaoVazio.addEventListener("click", (e) => {
         trocaCoracao(e.target)
-    })
-})
+    });
+});
 
 
 // Lista de desejo
@@ -108,6 +110,14 @@ listaDesejos.addEventListener("click", () => {
     } else {
         produtos.forEach((produto) => {
             produto.style.display = "inline"
-        })
-    }
+        });
+    };
+});
+
+
+// Lado esquerdo
+especificos.forEach((especifico) => {
+    especifico.addEventListener("click", (e) => {
+        console.log(e.target);
+    });
 });
