@@ -9,7 +9,7 @@
 }
 
 main {
-    margin: 8rem auto 8rem;
+    margin: 6rem auto 9.5rem;
     display: flex;
     justify-content: center;
     gap: 3rem;
@@ -57,6 +57,9 @@ main form input[type="password"],
     border: 1px solid #113a7a;
     border-radius: 8px;
     font-size: 0.9rem;
+    color: #113a7a;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 main form input[type="text"]::placeholder,
@@ -81,6 +84,22 @@ main form input[type="password"]:focus {
     background-color: #fafafa;
     color: #113a7a;
     border: 1px solid #113a7a;
+}
+
+
+/* Erro e Acerto */
+.erro {
+    text-align: center;
+    color: #f10a0a;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.acerto {
+    text-align: center;
+    color: #2ef007;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 
