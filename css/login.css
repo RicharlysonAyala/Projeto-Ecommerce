@@ -9,7 +9,7 @@
 }
 
 main {
-    margin: 8rem auto 11rem;
+    margin: 8rem auto 8rem;
     display: flex;
     justify-content: center;
     gap: 3rem;
@@ -41,14 +41,14 @@ main form {
 }
 
 h2 {
+    font-size: 1.9rem;
     text-align: center;
     color: #113a7a;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 main form input[type="text"],
 main form input[type="password"],
-#cadastro-btn,
 #login-btn {
     padding: 1rem 1.5em;
     width: 350px;
@@ -64,30 +64,9 @@ main form input[type="password"]::placeholder {
     color: #113a7a;
 }
 
-main #cadastro input[type="text"],
-main #cadastro input[type="password"] {
-    background-color: #113a7a;
-    border: 1px solid #113a7a;
-    color: #fafafa;
-    font-size: 0.9rem;
-}
-
-main #cadastro input[type="text"]::placeholder,
-main #cadastro input[type="password"]::placeholder {
-    color: #fafafa;
-}
-
 main form input[type="text"]:focus,
 main form input[type="password"]:focus {
     border: 2px solid #113a7a;
-}
-
-#cadastro-btn {
-    cursor: pointer;
-    color: #113a7a;
-    transition: 0.4s;
-    font-size: 0.9rem;
-    font-weight: bold;
 }
 
 #login-btn {
@@ -95,25 +74,13 @@ main form input[type="password"]:focus {
     color: #fafafa;
     cursor: pointer;
     transition: 0.4s;
-    font-size: 0.9rem;
     font-weight: bold;
-}
-
-#cadastro-btn:hover {
-    background-color: #113a7a;
-    color: #fafafa;
-    
 }
 
 #login-btn:hover {
     background-color: #fafafa;
     color: #113a7a;
     border: 1px solid #113a7a;
-}
-
-#login {
-    padding-right: 3rem;
-    border-right: 0.12rem solid #ccc;
 }
 
 
