@@ -17,5 +17,5 @@ fechar.addEventListener('click', () => {
     body.style.overflow = "scroll"
     setTimeout(() => {
         listCar.style.display = "none"
-    }, 500);
+    }, 459);
 })
