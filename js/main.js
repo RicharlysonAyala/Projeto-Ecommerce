@@ -1,5 +1,5 @@
 // Produtos
-const produtos2 = document.querySelectorAll(".produto");
+const produtos = document.querySelectorAll(".produto");
 
 
 // Seleção de elementos
@@ -16,7 +16,10 @@ let valueInput;
 
 const iconeCoracaoVazio = document.querySelectorAll(".coracao-desejo")
 
-console.log(iconeCoracaoVazio);
+const listaDesejos = document.querySelector("#lista-de-desejos");
+const coracaoDesejo = document.querySelector("#coracao-lista-desejo");
+const paragrafo = document.querySelector("#paragrafo");
+
 
 // Evento de abrir a barra
 iconeCarrinho.addEventListener('click', () => {
@@ -39,7 +42,7 @@ fechar.addEventListener('click', () => {
 
 // Procurar produtos
 const procurarProdutos = (search) => {
-    produtos2.forEach((produto) => {
+    produtos.forEach((produto) => {
         const nomeProduto = produto.querySelector("h3").innerText.toLowerCase();
 
         const nomePesquisa = search.toLowerCase();
@@ -71,9 +74,40 @@ lupa.addEventListener("click", () => {
 
 
 // Funcionalidade do coração
+const trocaCoracao = (value) => {
+    value.classList.toggle("fa-regular");
+    value.classList.toggle("fa-solid");
+}
+
 iconeCoracaoVazio.forEach((coracaoVazio) => {
     coracaoVazio.addEventListener("click", (e) => {
-        e.target.classList.toggle("fa-regular");
-        e.target.classList.toggle("fa-solid");
+        trocaCoracao(e.target)
     })
 })
+
+
+// Lista de desejo
+listaDesejos.addEventListener("click", () => {
+    trocaCoracao(coracaoDesejo);
+
+    if (coracaoDesejo.classList.contains("fa-solid")) {
+        let cont = 0;
+        produtos.forEach((produto) => {
+            divCoracao = produto.querySelector(".agrupamento-desejo");
+            coracaoTarget = divCoracao.querySelector("i")
+            
+            if (!coracaoTarget.classList.contains("fa-solid")) {
+                produto.style.display = "none"
+                cont += 1
+            }
+
+            if (cont === 9) {
+                paragrafo.innerText = "Nenhum Produto encontrado!!"
+            };
+        });
+    } else {
+        produtos.forEach((produto) => {
+            produto.style.display = "inline"
+        })
+    }
+});
