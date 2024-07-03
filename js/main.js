@@ -16,7 +16,7 @@ let valueInput;
 
 const iconeCoracaoVazio = document.querySelectorAll(".coracao-desejo")
 
-const listaDesejos = document.querySelector("#lista-de-desejos");
+const listaDesejos = document.querySelector("#favoritos");
 const coracaoDesejo = document.querySelector("#coracao-lista-desejo");
 const paragrafo = document.querySelector("#paragrafo");
 
@@ -92,10 +92,12 @@ iconeCoracaoVazio.forEach((coracaoVazio) => {
 listaDesejos.addEventListener("click", () => {
     trocaCoracao(coracaoDesejo);
 
+    paragrafo.innerText = 'Exibindo muita "criatividade"'
+
     if (coracaoDesejo.classList.contains("fa-solid")) {
         let cont = 0;
         produtos.forEach((produto) => {
-            divCoracao = produto.querySelector(".agrupamento-desejo");
+            divCoracao = produto.querySelector(".agrupamento-favoritos");
             coracaoTarget = divCoracao.querySelector("i")
             
             if (!coracaoTarget.classList.contains("fa-solid")) {

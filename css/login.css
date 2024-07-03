@@ -110,6 +110,10 @@ footer {
     color: #fafafa;
 }
 
+.logo-footer {
+    padding: 1rem 0;
+}
+
 #footer-contatos {
     text-align: center;
     padding: 1rem 0;
