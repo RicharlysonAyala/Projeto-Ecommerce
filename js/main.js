@@ -41,7 +41,6 @@ fechar.addEventListener('click', () => {
     listCar.classList.remove("abrir")
     listCar.classList.add("fechar")
     body.style.overflow = "scroll"
-<<<<<<< HEAD
 })
 
 // Lista de Desejos
@@ -53,7 +52,6 @@ const produto = document.querySelector('.produto')
 iconeDesejo.addEventListener('click', () => {
     
 })
-=======
     setTimeout(() => {
         listCar.style.display = "none"
     }, 459);
@@ -141,6 +139,14 @@ especificos.forEach((especifico) => {
         console.log(e.target);
     });
 });
->>>>>>> c4658d6a2c5f0cea24e459f5d55b2de9b42a37a7
 
 
+// Remove car
+
+const produtoRemoveButton = document.getElementsByClassName('remove-produto');
+console.log(produtoRemoveButton);
+for (var i = 0; i < produtoRemoveButton.length; i++) {
+    produtoRemoveButton[i].addEventListener('click', function(){
+        console.log('clicou')
+    } )
+}
