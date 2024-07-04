@@ -228,7 +228,7 @@ button {
     padding-left: 0.5rem;
 }
 
-#lista-de-desejos {
+#favoritos {
     cursor: pointer;
 }
 
@@ -415,7 +415,7 @@ main {
     font-size: 1.1rem;
 }
 
-.agrupamento-desejo {
+.agrupamento-favoritos {
     position: absolute;
     top: 5px;
     right: 40px;
@@ -423,7 +423,7 @@ main {
     transition: 0.5s;
 }
 
-.agrupamento-desejo:hover {
+.agrupamento-favoritos:hover {
     background-color: #d1cece;
 }
 
