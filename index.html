@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RTR</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="./js/main.js" defer></script>
     <link 
@@ -39,7 +39,7 @@
         <button id="bar-car-finish">Finalizar</button>
     </div>
     <header>
-        <h1 class="logo">RTR</h1>
+        <h1 class="logo">BLUE MIND</h1>
         <div id="pesquisa-navbar">
             <input type="text" name="barra-de-pesquisa-da-navbar" id="pesquisa" placeholder="O que você está procurando?" required>
             <button id="lupa"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -47,10 +47,10 @@
         <div class="links">
             <ul class="nav-itens"> 
                 <i class="fa-regular fa-user"></i>
-                <li><a id="usuario" href="./rotas/login.html">Login</a></li>
-                <i class="fa-regular fa-heart"></i>
+                <li><a id="usuario" href="./rotas/login.html">Valter Lindo</a></li>
+                <i class="fa-regular fa-heart" id="coracao-lista-desejo"></i>
                 <!-- <i class="fa-solid fa-heart"></i> -->
-                <li><a id="lista-de-desejos">Lista de desejos</a></li>
+                <li><a id="favoritos">Favoritos</a></li>
                 <div id="carrinho">
                     <i class="fa-solid fa-cart-shopping"></i>
                     <button id="bolinha-carrinho">0</button>
@@ -73,27 +73,27 @@
         <div id="lado-esquerdo">
             <div class="especifico">
                 <p>Mais caro</p>
-                <p class="cruz">+</p>
+                <p class="cruz" id="caro">+</p>
             </div>
             <div class="especifico">
                 <p>Mais barato</p>
-                <p class="cruz">+</p>
+                <p class="cruz" id="barato">+</p>
             </div>
             <div class="especifico">
                 <p>HTML</p>
-                <p class="cruz">+</p>
+                <p class="cruz" id="html">+</p>
             </div>
             <div class="especifico">
                 <p>CSS</p>
-                <p class="cruz">+</p>
+                <p class="cruz" id="css">+</p>
             </div>
             <div class="especifico">
                 <p>Java Script</p>
-                <p class="cruz">+</p>
+                <p class="cruz" id="js">+</p>
             </div>
             <div class="especifico">
                 <p>Padrão</p>
-                <p class="cruz">+</p>
+                <p class="cruz" id="padrao">+</p>
             </div>
         </div>
         <div id="lado-direito">
@@ -107,7 +107,7 @@
                     <p>R$ 12,00</p>
                     <h4>pra html R$ 10,00 </h4>
                     <button class="add-carrinho">Adicionar ao carrinho</button>
-                    <div class="agrupamento-desejo">
+                    <div class="agrupamento-favoritos">
                         <i class="fa-regular fa-heart coracao-desejo"></i>
                         <!-- <i class="fa-solid fa-heart coracao-desejo"></i> -->
                     </div>
@@ -119,7 +119,7 @@
                     <p>$12,00</p>
                     <h4>pra html R$ 10,00 </h4>
                     <button class="add-carrinho">Adicionar ao carrinho</button>
-                    <div class="agrupamento-desejo">
+                    <div class="agrupamento-favoritos">
                         <i class="fa-regular fa-heart coracao-desejo"></i>
                     </div>
                 </div>
@@ -130,7 +130,7 @@
                     <p>$12,00</p>
                     <h4>pra html R$ 10,00 </h4>
                     <button class="add-carrinho">Adicionar ao carrinho</button>
-                    <div class="agrupamento-desejo">
+                    <div class="agrupamento-favoritos">
                         <i class="fa-regular fa-heart coracao-desejo"></i>
                     </div>
                 </div>
@@ -141,7 +141,7 @@
                     <p>$12,00</p>
                     <h4>pra html R$ 10,00 </h4>
                     <button class="add-carrinho">Adicionar ao carrinho</button>
-                    <div class="agrupamento-desejo">
+                    <div class="agrupamento-favoritos">
                         <i class="fa-regular fa-heart coracao-desejo"></i>
                     </div>
                 </div>
@@ -152,7 +152,7 @@
                     <p>$12,00</p>
                     <h4>pra html R$ 10,00 </h4>
                     <button class="add-carrinho">Adicionar ao carrinho</button>
-                    <div class="agrupamento-desejo">
+                    <div class="agrupamento-favoritos">
                         <i class="fa-regular fa-heart coracao-desejo"></i>
                     </div>
                 </div>
@@ -163,7 +163,7 @@
                     <p>$12,00</p>
                     <h4>pra html R$ 10,00 </h4>
                     <button class="add-carrinho">Adicionar ao carrinho</button>
-                    <div class="agrupamento-desejo">
+                    <div class="agrupamento-favoritos">
                         <i class="fa-regular fa-heart coracao-desejo"></i>
                     </div>                
                 </div>
@@ -174,7 +174,7 @@
                     <p>$12,00</p>
                     <h4>pra html R$ 10,00 </h4>
                     <button class="add-carrinho">Adicionar ao carrinho</button>
-                    <div class="agrupamento-desejo">
+                    <div class="agrupamento-favoritos">
                         <i class="fa-regular fa-heart coracao-desejo"></i>
                     </div>
                 </div>
@@ -185,7 +185,7 @@
                     <p>$12,00</p>
                     <h4>pra html R$ 10,00 </h4>
                     <button class="add-carrinho">Adicionar ao carrinho</button>
-                    <div class="agrupamento-desejo">
+                    <div class="agrupamento-favoritos">
                         <i class="fa-regular fa-heart coracao-desejo"></i>
                     </div>
                 </div>
@@ -196,7 +196,7 @@
                     <p>$12,00</p>
                     <h4>pra html R$ 10,00 </h4>
                     <button class="add-carrinho">Adicionar ao carrinho</button>
-                    <div class="agrupamento-desejo">
+                    <div class="agrupamento-favoritos">
                         <i class="fa-regular fa-heart coracao-desejo"></i>
                     </div>
                 </div>
@@ -205,7 +205,7 @@
     </main>
     <footer>
         <div id="footer-contatos">
-            <h1 class="logo-footer">RTR</h1>
+            <h1 class="logo-footer">BLUE MIND</h1>
             <p>Não é linguagem de programação que define o programador, mas sim sua lógica</p>
             <div id="midia-social-footer">
                 <a href="https://github.com/RicharlysonAyala/Projeto-Ecommerce" target="_blank" class="footer-icon" id="github">
@@ -229,7 +229,7 @@
         </div>
         <div id="footer-copyright">
             &#169
-            copyright 2024 RTR todo direitos reservados, se vim roubar vou chamar severo!!
+            copyright 2024 BLUE MIND todo direitos reservados, se vim roubar vou chamar severo!!
         </div>
     </footer>
 </body>

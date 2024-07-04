@@ -19,14 +19,41 @@
     height: 100vh;
     width: 300px;
     z-index: 1;
-    transition: 0.5s;
     display: none;
+    animation-duration: 0.5s;
+    
+}
+
+@keyframes fecharTela {
+    0% {
+        width: 300px;
+    }
+    100% {
+        width: 0px;
+    }
+}
+
+@keyframes abrirTela {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 300px;
+    }
+}
+
+.abrir {
+    animation-name: abrirTela;
+}
+
+.fechar {
+    animation-name: fecharTela;
 }
 
 #fechar {
     position: absolute;
     top: 10px;
-    right: 15px;
+    right: 18px;
     color: #444;
     font-weight: bold;
     font-size: 1.5rem;

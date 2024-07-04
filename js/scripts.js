@@ -1,64 +1,70 @@
-const formLogin = document.querySelector('#form-login');
-const formCadastro = document.querySelector('#form-cadastro');
-const nomeInput = document.querySelectory('.entrada-do-nome-cadastro');
-const senhaInput = document.querySelectory('.entrada-da-senha-cadastro');
-const nomeLogin = document.querySelectory('.entrada-do-nome-login');
-const senhaLogin = document.querySelectory('.entrada-da-senha-login');
+// Seleção
+const form = document.querySelector('#login');
+const nomeLogin = document.querySelector('.entrada-do-nome-login');
+const senhaLogin = document.querySelector('.entrada-da-senha-login');
 
-const url = '../index.html'
-const btnCadastro = document.querySelector('#cadastro-btn');
+const url = '../index.html';
 const btnLogin = document.querySelector('#login-btn');
+
 
 // Função btn | add um evento para o btn
 function openInNewTab(url){
-    const win = window.open(url, '_blank')
-    win.focus
+    const win = window.open(url, '_blank');
+    win.focus;
 }
 
-// Pegando os valores do input
-const nomeValue = nomeInput.value;
-const senhaValue = senhaInput.value;
-const nomeLoginValue = nomeLogin.value;
-const senhaLoginvalue = senhaLogin.value;
 
+// Pegando os valores do input
+let nomeLoginValue = nomeLogin.value;
+let senhaLoginValue = senhaLogin.value;
+
+nomeLogin.addEventListener("input", () => {
+    nomeLoginValue = nomeLogin.value;
+});
+
+senhaLogin.addEventListener("input", () => {
+    senhaLoginValue = senhaLogin.value;
+});
+
+
+// Mensagens exibidas
+const erro = document.createElement("p");
+erro.classList.add("erro");
+form.appendChild(erro);
+
+const acerto = document.createElement("p");
+acerto.classList.add("acerto");
+form.appendChild(acerto);
+
+
+// Lógica do login
 const logins = [
     {
-        nome: "Valter",
-        senha: "123"
+        nome: "ValterLindo",
+        senha: "euamocss"
     }
-]
+];
 
-// Add um evento para o form | validação de formulário
-formLogin.addEventListener('submit', (e) => {
+btnLogin.addEventListener("click", (e) => {
+    e.preventDefault();
 
-    // Para que a pgn não fique atualizando ao clicar
-    e.preventDefault()
-
-    class Login {
-        constructor(nome,senha) {
-            this.nome = nome;
-            this.senha = senha;
-        }
-    }
-
-    const usuarios = [
-        {
-            nome: "Valter",
-            senha: 123
-        }
-    ]
-
-    if(nomeValue.lenght > 0 && senhaValue.lenght > 0){
-       usuarios.push(new Login(nomeValue, senhaValue))
-    } else{
-        alert('Preencha os campos de cadastro')
-    }
-    if(usuarios.map((usuarios => {
-        nomeLogin == usuarios[0] && senhaLogin == usuarios[1];
-    }))) {
-       openInNewTab()
+    if (nomeLoginValue === "" || senhaLoginValue === "") {
+        erro.innerText = "Preencha os campos para continuar"
+        console.log(nomeLoginValue, senhaLoginValue);
+        setTimeout(() => {
+            erro.innerText = "";
+        }, 2000);
+    } else if (nomeLoginValue === logins[0].nome && senhaLoginValue === logins[0].senha) {
+        acerto.innerText = "Login efetuado... Enviando para o site!!"
+        setTimeout(() => {
+            acerto.innerText = "";
+            openInNewTab(url);
+        }, 2000);
     } else {
-        alert('Preencha os campos de login')
+        erro.innerText = "Nome ou senha de usuário incorreta!!"
+        console.log(nomeLoginValue, senhaLoginValue);
+        setTimeout(() => {
+            erro.innerText = "";
+        }, 2000);
     }
-})
-
+});
