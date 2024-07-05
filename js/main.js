@@ -139,14 +139,3 @@ especificos.forEach((especifico) => {
         console.log(e.target);
     });
 });
-
-
-// Remove car
-
-const produtoRemoveButton = document.getElementsByClassName('remove-produto');
-console.log(produtoRemoveButton);
-for (var i = 0; i < produtoRemoveButton.length; i++) {
-    produtoRemoveButton[i].addEventListener('click', function(){
-        console.log('clicou')
-    } )
-}
