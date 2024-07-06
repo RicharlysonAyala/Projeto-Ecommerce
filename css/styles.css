@@ -357,11 +357,11 @@ main {
     background-color: #fff;
     border-radius: 5px;
     padding: 1rem;
-    cursor: pointer;
 }
 
 .cruz {
     font-weight: bold;
+    cursor: pointer;
 }
 
 
