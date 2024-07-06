@@ -1,5 +1,6 @@
 // Produtos
 const produtos = document.querySelectorAll(".produto");
+const allProdutos = document.querySelector("#produtos")
 
 
 // Seleção de elementos
@@ -120,6 +121,45 @@ listaDesejos.addEventListener("click", () => {
 // Lado esquerdo
 especificos.forEach((especifico) => {
     especifico.addEventListener("click", (e) => {
-        console.log(e.target);
+        switch (e.target.id) {
+            case "caro":
+                console.log("a");
+                allProdutos.innerHTML = "";
+                return
+            case "barato":
+                console.log("b");
+                allProdutos.innerHTML = "";
+                return;
+            case "pilulas":
+                console.log("c");
+                allProdutos.innerHTML = "";
+                produtos.forEach((produto) => {
+                    console.log(produto)
+                    if (produto.classList.contains("pilulas")) {
+                        allProdutos.appendChild(produto);
+                    };
+                });
+                return;
+            case "kits":
+                console.log("d");
+                allProdutos.innerHTML = "";
+                produtos.forEach((produto) => {
+                    console.log(produto)
+                    if (produto.classList.contains("kits")) {
+                        allProdutos.appendChild(produto);
+                    };
+                });
+                return;
+            case "padrao":
+                console.log("e");
+                allProdutos.innerHTML = "";
+                produtos.forEach((produto) => {
+                    allProdutos.appendChild(produto);
+                });
+                return;
+            default:
+                console.log("Clicou fora");
+                return;
+        }
     });
 });
