@@ -1,13 +1,8 @@
-<<<<<<< HEAD
-// Close/Open carrinho
-
-=======
 // Produtos
 const produtos = document.querySelectorAll(".produto");
 
 
 // Seleção de elementos
->>>>>>> c4658d6a2c5f0cea24e459f5d55b2de9b42a37a7
 const iconeCarrinho = document.querySelector('.fa-cart-shopping');
 const listCar = document.querySelector('#bar-car');
 const body = document.querySelector("body");
@@ -41,19 +36,6 @@ fechar.addEventListener('click', () => {
     listCar.classList.remove("abrir")
     listCar.classList.add("fechar")
     body.style.overflow = "scroll"
-<<<<<<< HEAD
-})
-
-// Lista de Desejos
- 
-const iconeDesejo = document.querySelector('.fa-heart coracao-desejo');
-const listaDesejo = document.querySelector('.agrupamento-desejo');
-const produto = document.querySelector('.produto')
-
-iconeDesejo.addEventListener('click', () => {
-    
-})
-=======
     setTimeout(() => {
         listCar.style.display = "none"
     }, 459);
@@ -141,6 +123,3 @@ especificos.forEach((especifico) => {
         console.log(e.target);
     });
 });
->>>>>>> c4658d6a2c5f0cea24e459f5d55b2de9b42a37a7
-
-
