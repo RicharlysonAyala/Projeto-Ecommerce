@@ -139,3 +139,33 @@ especificos.forEach((especifico) => {
         console.log(e.target);
     });
 });
+
+
+// add ao carrinho
+
+const cart = [];
+
+function addToCart(productId) {
+    const produto = document.querySelector(`[data-id="${productId}"]`);
+    const productName = produto.textContent;
+    const productPrice = parseFloat(product.getAttribute('data-price'));
+
+    cart.push({ name: productName, price: productPrice });
+    updateCart();
+    console.log(addToCart)
+}
+
+function updateCart() {
+    const cartList = document.getElementById('cart');
+    cartList.innerHTML = '';
+
+    let total = 0;
+    for (const item of cart) {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${item.name} - R$ ${item.price.toFixed(2)}`;
+        cartList.appendChild(listItem);
+        total += item.price;
+    }
+
+    console.log(`Total do carrinho: R$ ${total.toFixed(2)}`);
+}
