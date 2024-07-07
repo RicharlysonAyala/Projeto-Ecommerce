@@ -37,20 +37,6 @@ fechar.addEventListener('click', () => {
     listCar.classList.remove("abrir")
     listCar.classList.add("fechar")
     body.style.overflow = "scroll"
-<<<<<<< HEAD
-})
-
-// Lista de Desejos
- 
-const iconeDesejo = document.querySelector('.fa-heart coracao-desejo');
-const listaDesejo = document.querySelector('.agrupamento-desejo');
-const produto = document.querySelector('.produto')
-
-iconeDesejo.addEventListener('click', () => {
-    
-})
-=======
->>>>>>> cda0c27ac278d2874ee6bafd86a2179a63fe8046
     setTimeout(() => {
         listCar.style.display = "none"
     }, 459);
@@ -176,7 +162,6 @@ especificos.forEach((especifico) => {
                 return;
         }
     });
-<<<<<<< HEAD
 });
 
  // Array para armazenar os itens no carrinho
@@ -231,6 +216,3 @@ especificos.forEach((especifico) => {
      });
    }
  }
-=======
-});
->>>>>>> cda0c27ac278d2874ee6bafd86a2179a63fe8046
