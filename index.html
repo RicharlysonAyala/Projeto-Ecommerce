@@ -57,6 +57,10 @@
                 </div>
             </ul>
         </div>
+
+        <div id="cart">
+            <!-- O carrinho será atualizado dinamicamente aqui -->
+          </div>
     </header>
     <div id="sub-bar">
       <ul>
@@ -92,9 +96,7 @@
                 <p class="cruz" id="padrao">+</p>
             </div>
         </div>
-        <div id="cart">
-            <!-- O carrinho será atualizado aqui -->
-          </div>
+        
         <div id="lado-direito">
             <h1 id="title">Mercadinho da Valterlândia</h1>
             <p id="paragrafo">Exibindo muita "criatividade"</p>
@@ -105,7 +107,7 @@
                     <p class="sub-paragrafo">A partir de </p>
                     <p>R$ 12,00</p>
                     <h4>pra html R$ 10,00 </h4>
-                    <button class="add-carrinho">Adicionar ao carrinho</button>
+                    <button class="add-carrinho" onclick="addToCart('produto1', 'Produto 1', 12.00)">Adicionar ao carrinho</button>
                     <div class="agrupamento-favoritos">
                         <i class="fa-regular fa-heart coracao-desejo"></i>
                         <!-- <i class="fa-solid fa-heart coracao-desejo"></i> -->
@@ -117,7 +119,7 @@
                     <p class="sub-paragrafo">A partir de </p>
                     <p>$12,00</p>
                     <h4>pra html R$ 10,00 </h4>
-                    <button class="add-carrinho">Adicionar ao carrinho</button>
+                    <button class="add-carrinho" onclick="addToCart('produto2', 'Produto 2', 12.00)">Adicionar ao carrinho</button>
                     <div class="agrupamento-favoritos">
                         <i class="fa-regular fa-heart coracao-desejo"></i>
                     </div>
@@ -128,7 +130,7 @@
                     <p class="sub-paragrafo">A partir de </p>
                     <p>$12,00</p>
                     <h4>pra html R$ 10,00 </h4>
-                    <button class="add-carrinho">Adicionar ao carrinho</button>
+                    <button class="add-carrinho" onclick="addToCart('produto3', 'Produto 3', 12.00)">Adicionar ao carrinho</button>
                     <div class="agrupamento-favoritos">
                         <i class="fa-regular fa-heart coracao-desejo"></i>
                     </div>
