@@ -139,7 +139,3 @@ especificos.forEach((especifico) => {
         console.log(e.target);
     });
 });
-
-
-// add ao carrinho
-
