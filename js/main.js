@@ -139,3 +139,56 @@ especificos.forEach((especifico) => {
         console.log(e.target);
     });
 });
+
+ // Array para armazenar os itens no carrinho
+ let cart = [];
+
+ // Função para adicionar um item ao carrinho
+ function addToCart(id, name, price) {
+   // Verifica se o item já está no carrinho
+   const existingItem = cart.find(item => item.id === id);
+   
+   if (existingItem) {
+     existingItem.quantity++;
+   } else {
+     cart.push({ id, name, price, quantity: 1 });
+   }
+   
+   // Atualiza o carrinho na interface
+   renderCart();
+ }
+
+ // Função para remover um item do carrinho
+ function removeFromCart(id) {
+   // Encontra o índice do item no carrinho
+   const index = cart.findIndex(item => item.id === id);
+   
+   if (index !== -1) {
+     // Remove o item do carrinho
+     cart.splice(index, 1);
+     
+     // Atualiza o carrinho na interface
+     renderCart();
+   }
+ }
+
+ // Função para renderizar o carrinho na interface
+ function renderCart() {
+   const cartElement = document.getElementById('cart');
+   cartElement.innerHTML = ''; // Limpa o conteúdo do carrinho
+   
+   if (cart.length === 0) {
+     cartElement.innerHTML = '<p>Carrinho vazio</p>';
+   } else {
+     cart.forEach(item => {
+       const itemElement = document.createElement('div');
+       itemElement.innerHTML = `
+         <div>
+           <span>${item.name} - R$${item.price} (${item.quantity})</span>
+           <button class="btn" onclick="removeFromCart('${item.id}')">Remover</button>
+         </div>
+       `;
+       cartElement.appendChild(itemElement);
+     });
+   }
+ }
