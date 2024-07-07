@@ -1,13 +1,9 @@
-<<<<<<< HEAD
-// Close/Open carrinho
-
-=======
 // Produtos
 const produtos = document.querySelectorAll(".produto");
+const allProdutos = document.querySelector("#produtos")
 
 
 // Seleção de elementos
->>>>>>> c4658d6a2c5f0cea24e459f5d55b2de9b42a37a7
 const iconeCarrinho = document.querySelector('.fa-cart-shopping');
 const listCar = document.querySelector('#bar-car');
 const body = document.querySelector("body");
@@ -41,6 +37,7 @@ fechar.addEventListener('click', () => {
     listCar.classList.remove("abrir")
     listCar.classList.add("fechar")
     body.style.overflow = "scroll"
+<<<<<<< HEAD
 })
 
 // Lista de Desejos
@@ -52,6 +49,8 @@ const produto = document.querySelector('.produto')
 iconeDesejo.addEventListener('click', () => {
     
 })
+=======
+>>>>>>> cda0c27ac278d2874ee6bafd86a2179a63fe8046
     setTimeout(() => {
         listCar.style.display = "none"
     }, 459);
@@ -136,8 +135,48 @@ listaDesejos.addEventListener("click", () => {
 // Lado esquerdo
 especificos.forEach((especifico) => {
     especifico.addEventListener("click", (e) => {
-        console.log(e.target);
+        switch (e.target.id) {
+            case "caro":
+                console.log("a");
+                allProdutos.innerHTML = "";
+                return
+            case "barato":
+                console.log("b");
+                allProdutos.innerHTML = "";
+                return;
+            case "pilulas":
+                console.log("c");
+                allProdutos.innerHTML = "";
+                produtos.forEach((produto) => {
+                    console.log(produto)
+                    if (produto.classList.contains("pilulas")) {
+                        allProdutos.appendChild(produto);
+                    };
+                });
+                return;
+            case "kits":
+                console.log("d");
+                allProdutos.innerHTML = "";
+                produtos.forEach((produto) => {
+                    console.log(produto)
+                    if (produto.classList.contains("kits")) {
+                        allProdutos.appendChild(produto);
+                    };
+                });
+                return;
+            case "padrao":
+                console.log("e");
+                allProdutos.innerHTML = "";
+                produtos.forEach((produto) => {
+                    allProdutos.appendChild(produto);
+                });
+                return;
+            default:
+                console.log("Clicou fora");
+                return;
+        }
     });
+<<<<<<< HEAD
 });
 
  // Array para armazenar os itens no carrinho
@@ -192,3 +231,6 @@ especificos.forEach((especifico) => {
      });
    }
  }
+=======
+});
+>>>>>>> cda0c27ac278d2874ee6bafd86a2179a63fe8046
