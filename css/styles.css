@@ -79,7 +79,7 @@
     overflow-y: scroll;
 }
 
-#bar-car-produts #bar-car-not-found {
+#bar-car-produts .bar-car-not-found {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
     text-align: center;
