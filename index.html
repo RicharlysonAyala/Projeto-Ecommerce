@@ -20,23 +20,6 @@
         <h2>Carrinho</h2>
         <div id="bar-car-produts">
             <p>Nenhum produto no carrinho</p>
-            <div class="bar-car-produt">
-                <div id="cart">
-                    <!-- O carrinho será atualizado dinamicamente aqui -->
-                  </div>
-                <img src="./img/download.png" alt="">
-                <div class="info-produt-bar">
-                    <p>Estrutura para prédios 40x40</p>
-                    <h3>R$12,00</h3>
-                </div>
-            </div>
-            <div class="bar-car-produt">
-                <img src="./img/download.png" alt="">
-                <div class="info-produt-bar">
-                    <p>Estrutura para prédios 40x40</p>
-                    <h3>R$12,00</h3>
-                </div>
-            </div>
         </div>
         <h2 id="price-bar">Subtotal: R$<span id="price-bar-car">00,00</span></h2>
         <button id="bar-car-finish">Finalizar</button>
@@ -100,108 +83,106 @@
             <h1 id="title">Mercadinho da Valterlândia</h1>
             <p id="paragrafo">Exibindo muita "criatividade"</p>
             <div id="produtos">
-                <div class="produto pilulas" id="Produto 1">
-                    <img src="img/download.png" alt="a">
+                <div class="produto pilulas" id="produto1">
+                    <img src="img/produto1.png" alt="a">
                     <h3>Estrutura para prédios 40x40</h3>
                     <p class="sub-paragrafo">A partir de </p>
                     <p>R$ 12,00</p>
                     <h4>pra html R$ 10,00 </h4>
-                    <button class="add-carrinho" onclick="addToCart('produto1', 'Produto 1', 12.00)">Adicionar ao carrinho</button>
+                    <button class="add-carrinho" onclick="addToCart('produto1', 'Produto 1', 12.00, 'R$12.00')">Adicionar ao carrinho</button>
                     <div class="agrupamento-favoritos">
                         <i class="fa-regular fa-heart coracao-desejo"></i>
                         <!-- <i class="fa-solid fa-heart coracao-desejo"></i> -->
                     </div>
                 </div>
-                <div class="produto pilulas" id="Produto 2">
-                    <img src="img/download.png" alt="a">
+                <div class="produto pilulas" id="produto2">
+                    <img src="img/produto2.png" alt="a">
                     <h3>Nome2</h3>
                     <p class="sub-paragrafo">A partir de </p>
                     <p>$12,00</p>
                     <h4>pra html R$ 10,00 </h4>
-                    <button class="add-carrinho" onclick="addToCart('produto2', 'Produto 2', 12.00)">Adicionar ao carrinho</button>
+                    <button class="add-carrinho" onclick="addToCart('produto2', 'Produto 2', 12.00, 'R$12.00')">Adicionar ao carrinho</button>
                     <div class="agrupamento-favoritos">
                         <i class="fa-regular fa-heart coracao-desejo"></i>
                     </div>
                 </div>
-                <div class="produto pilulas" id="Produto 3">
-                    <img src="img/download.png" alt="a">
+                <div class="produto pilulas" id="produto3">
+                    <img src="img/produto3.png" alt="a">
                     <h3>Nome3</h3>
                     <p class="sub-paragrafo">A partir de </p>
-                    <p>$12,00</p>
+                    <p>$13,75</p>
                     <h4>pra html R$ 10,00 </h4>
-                    <button class="add-carrinho" onclick="addToCart('produto3', 'Produto 3', 12.00)">Adicionar ao carrinho</button>
+                    <button class="add-carrinho" onclick="addToCart('produto3', 'Produto 3', 13.75, 'R$13.75')">Adicionar ao carrinho</button>
                     <div class="agrupamento-favoritos">
                         <i class="fa-regular fa-heart coracao-desejo"></i>
                     </div>
                 </div>
-                <div class="produto kits">
-                    <img src="img/download.png" alt="a">
+                <div class="produto kits" id="produto4">
+                    <img src="img/produto4.png" alt="a">
                     <h3>Nome4</h3>
                     <p class="sub-paragrafo">A partir de </p>
                     <p>$12,00</p>
                     <h4>pra html R$ 10,00 </h4>
-                    <button class="add-carrinho">Adicionar ao carrinho</button>
+                    <button class="add-carrinho" onclick="addToCart('produto4', 'Produto 4', 12.00, 'R$12.00')">Adicionar ao carrinho</button>
                     <div class="agrupamento-favoritos">
                         <i class="fa-regular fa-heart coracao-desejo"></i>
                     </div>
                 </div>
-                <div class="produto kits">
-                    <img src="img/download.png" alt="a">
+                <div class="produto kits" id="produto5">
+                    <img src="img/produto5.png" alt="a">
                     <h3>Nome5</h3>
                     <p class="sub-paragrafo">A partir de </p>
                     <p>$12,00</p>
                     <h4>pra html R$ 10,00 </h4>
-                    <button class="add-carrinho">Adicionar ao carrinho</button>
+                    <button class="add-carrinho" onclick="addToCart('produto5', 'Produto 5', 12.00, 'R$12.00')">Adicionar ao carrinho</button>
                     <div class="agrupamento-favoritos">
                         <i class="fa-regular fa-heart coracao-desejo"></i>
                     </div>
                 </div>
-                <div class="produto kits">
-                    <img src="img/download.png" alt="a">
+                <div class="produto kits" id="produto6">
+                    <img src="img/produto6.png" alt="a">
                     <h3>Nome6</h3>
                     <p class="sub-paragrafo">A partir de </p>
                     <p>$12,00</p>
                     <h4>pra html R$ 10,00 </h4>
-                    <button class="add-carrinho">Adicionar ao carrinho</button>
+                    <button class="add-carrinho" onclick="addToCart('produto6', 'Produto 6', 12.00, 'R$12.00')">Adicionar ao carrinho</button>
                     <div class="agrupamento-favoritos">
                         <i class="fa-regular fa-heart coracao-desejo"></i>
                     </div>                
                 </div>
-                <div class="produto">
-                    <img src="img/download.png" alt="a">
+                <div class="produto" id="produto7">
+                    <img src="img/produto7.png" alt="a">
                     <h3>Nome7</h3>
                     <p class="sub-paragrafo">A partir de </p>
                     <p>$12,00</p>
                     <h4>pra html R$ 10,00 </h4>
-                    <button class="add-carrinho">Adicionar ao carrinho</button>
+                    <button class="add-carrinho" onclick="addToCart('produto7', 'Produto 7', 12.00, 'R$12.00')">Adicionar ao carrinho</button>
                     <div class="agrupamento-favoritos">
                         <i class="fa-regular fa-heart coracao-desejo"></i>
                     </div>
                 </div>
-                <div class="produto" id="produto1">
-                    <img src="img/download.png" alt="a">
+                <div class="produto" id="produto8">
+                    <img src="img/produto8.png" alt="a">
                     <h3>Nome8</h3>
                     <p class="sub-paragrafo">A partir de </p>
                     <p>$12,00</p>
                     <h4>pra html R$ 10,00 </h4>
-                    <button class="add-carrinho">Adicionar ao carrinho</button>
+                    <button class="add-carrinho" onclick="addToCart('produto8', 'Produto 8', 12.00, 'R$12.00')">Adicionar ao carrinho</button>
                     <div class="agrupamento-favoritos">
                         <i class="fa-regular fa-heart coracao-desejo"></i>
                     </div>
                 </div>
-                <div class="produto">
-                    <img src="img/download.png" alt="a">
+                <div class="produto" id="produto9">
+                    <img src="img/produto9.png" alt="a">
                     <h3>Nome9</h3>
                     <p class="sub-paragrafo">A partir de </p>
                     <p>$12,00</p>
                     <h4>pra html R$ 10,00 </h4>
-                    <button type="click" class="add-carrinho">Adicionar ao carrinho</button>
+                    <button class="add-carrinho" onclick="addToCart('produto9', 'Produto 9', 12.00, 'R$12.00')">Adicionar ao carrinho</button>
                     <div class="agrupamento-favoritos">
                         <i class="fa-regular fa-heart coracao-desejo"></i>
                     </div>
-
-                
-
+                </div>
                 </div>
             </div>
         </div>
