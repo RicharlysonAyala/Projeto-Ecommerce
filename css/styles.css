@@ -76,6 +76,7 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    overflow-y: scroll;
 }
 
 #bar-car-produts p {
@@ -92,22 +93,22 @@
 }
 
 .bar-car-produt img {
-    width: 60px;
-    height: 50px;
+    width: 70px;
+    height: 60px;
 }
 
 .info-produt-bar {
     display: flex;
     flex-direction: column;
     width: 65%;
+    text-align: left;
 }
 
-.info-produt-bar p {
+.bar-car-produt .info-produt-bar p {
     font-size: 1.1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
     font-weight: 400;
-    text-align: start;
 }
 
 .info-produt-bar h3 {
