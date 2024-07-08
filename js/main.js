@@ -1,21 +1,21 @@
 // Produtos
 const produtos = document.querySelectorAll(".produto");
-const allProdutos = document.querySelector("#produtos")
+const allProdutos = document.querySelector("#produtos");
 
 
 // Seleção de elementos
 const iconeCarrinho = document.querySelector('.fa-cart-shopping');
 const listCar = document.querySelector('#bar-car');
 const body = document.querySelector("body");
-const fechar = document.querySelector('#fechar')
-const corPreta = document.querySelector("#cor-preta")
+const fechar = document.querySelector('#fechar');
+const corPreta = document.querySelector("#cor-preta");
 
-const barraDePesquisa = document.querySelector("#pesquisa")
-const lupa = document.querySelector("#lupa")
+const barraDePesquisa = document.querySelector("#pesquisa");
+const lupa = document.querySelector("#lupa");
 
 let valueInput;
 
-const iconeCoracaoVazio = document.querySelectorAll(".coracao-desejo")
+const iconeCoracaoVazio = document.querySelectorAll(".coracao-desejo");
 
 const listaDesejos = document.querySelector("#favoritos");
 const coracaoDesejo = document.querySelector("#coracao-lista-desejo");
@@ -48,10 +48,10 @@ const procurarProdutos = (search) => {
 
         const nomePesquisa = search.toLowerCase();
 
-        produto.style.display = "inline"
+        produto.style.display = "inline";
 
         if (!nomeProduto.includes(nomePesquisa)) {
-            produto.style.display = "none"
+            produto.style.display = "none";
         }
     });
 };
@@ -82,7 +82,7 @@ const trocaCoracao = (value) => {
 
 iconeCoracaoVazio.forEach((coracaoVazio) => {
     coracaoVazio.addEventListener("click", (e) => {
-        trocaCoracao(e.target)
+        trocaCoracao(e.target);
     });
 });
 
@@ -91,21 +91,21 @@ iconeCoracaoVazio.forEach((coracaoVazio) => {
 listaDesejos.addEventListener("click", () => {
     trocaCoracao(coracaoDesejo);
 
-    paragrafo.innerText = 'Exibindo muita "criatividade"'
+    paragrafo.innerText = 'Exibindo muita "criatividade"';
 
     if (coracaoDesejo.classList.contains("fa-solid")) {
         let cont = 0;
         produtos.forEach((produto) => {
             divCoracao = produto.querySelector(".agrupamento-favoritos");
-            coracaoTarget = divCoracao.querySelector("i")
+            coracaoTarget = divCoracao.querySelector("i");
             
             if (!coracaoTarget.classList.contains("fa-solid")) {
-                produto.style.display = "none"
-                cont += 1
+                produto.style.display = "none";
+                cont += 1;
             }
 
             if (cont === 9) {
-                paragrafo.innerText = "Nenhum Produto encontrado!!"
+                paragrafo.innerText = "Nenhum Produto encontrado!!";
             };
         });
     } else {
@@ -142,7 +142,7 @@ especificos.forEach((especifico) => {
                 console.log("d");
                 allProdutos.innerHTML = "";
                 produtos.forEach((produto) => {
-                    console.log(produto)
+                    console.log(produto);
                     if (produto.classList.contains("kits")) {
                         allProdutos.appendChild(produto);
                     };
@@ -162,11 +162,14 @@ especificos.forEach((especifico) => {
     });
 });
 
+
  // Array para armazenar os itens no carrinho
  let cart = [];
 
+
  // Função para adicionar um item ao carrinho
  function addToCart(id, name, price, showPrice) {
+
    // Verifica se o item já está no carrinho
    const existingItem = cart.find(item => item.id === id);
    
@@ -174,14 +177,16 @@ especificos.forEach((especifico) => {
      existingItem.quantity++;
    } else {
      cart.push({ id, name, price, showPrice, quantity: 1 });
-   }
+   };
    
+
    // Atualiza o carrinho na interface
    renderCart();
- }
+ };
 
  // Função para remover um item do carrinho
  function removeFromCart(id) {
+
    // Encontra o índice do item no carrinho
    const index = cart.findIndex(item => item.id === id);
    
@@ -189,10 +194,12 @@ especificos.forEach((especifico) => {
      // Remove o item do carrinho
      cart.splice(index, 1);
      
+
      // Atualiza o carrinho na interface
      renderCart();
-   }
- }
+   };
+ };
+
 
  // Função para renderizar o carrinho na interface
  const showValue = document.querySelector("#price-bar-car");
@@ -217,13 +224,9 @@ especificos.forEach((especifico) => {
          </div>
        `;
        cartElement.appendChild(itemElement);
-       console.log(cart[0])
-       if (cart[0] === "") {
-        console.log("A")
-       }
        value = value + item.price;
      });
-     console.log(cart[0])
+     console.log(cart[0]);
      showValue.innerText = value;
-   }
- }
+   };
+ };
