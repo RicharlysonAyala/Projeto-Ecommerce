@@ -79,7 +79,7 @@
     overflow-y: scroll;
 }
 
-#bar-car-produts p {
+#bar-car-produts #bar-car-not-found {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
     text-align: center;
@@ -89,7 +89,7 @@
 .bar-car-produt {
     display: flex;
     justify-content: center;
-    gap: 0.6rem;
+    gap: 1rem;
 }
 
 .bar-car-produt img {
@@ -100,15 +100,16 @@
 .info-produt-bar {
     display: flex;
     flex-direction: column;
-    width: 65%;
+    width: 57%;
     text-align: left;
 }
 
-.bar-car-produt .info-produt-bar p {
+.info-produt-bar p {
     font-size: 1.1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
     font-weight: 400;
+    text-align: left;
 }
 
 .info-produt-bar h3 {
@@ -117,7 +118,7 @@
     color: #777;
     font-weight: bolder;
     font-size: 1rem;
-    text-align: start;
+    text-align: left;
     margin-top: 0.5rem;
 }
 
