@@ -220,7 +220,7 @@ especificos.forEach((especifico) => {
                 <p>${item.name}</p>
                 <h3>${item.showPrice}</h3>
             </div>
-            <button class="btn" onclick="removeFromCart('${item.id}')">Remover</button>
+            <button class="btn" onclick="removeFromCart('${item.id}')">x</button>
          </div>
        `;
        cartElement.appendChild(itemElement);
