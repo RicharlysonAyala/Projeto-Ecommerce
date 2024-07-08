@@ -28,7 +28,6 @@ const especificos = document.querySelectorAll(".especifico");
 iconeCarrinho.addEventListener('click', () => {
     listCar.classList.remove("fechar")
     listCar.classList.add("abrir")
-    body.style.overflow = "hidden"
     listCar.style.display = "flex"
 });
 
@@ -36,7 +35,6 @@ iconeCarrinho.addEventListener('click', () => {
 fechar.addEventListener('click', () => {
     listCar.classList.remove("abrir")
     listCar.classList.add("fechar")
-    body.style.overflow = "scroll"
     setTimeout(() => {
         listCar.style.display = "none"
     }, 459);
@@ -168,14 +166,14 @@ especificos.forEach((especifico) => {
  let cart = [];
 
  // Função para adicionar um item ao carrinho
- function addToCart(id, name, price) {
+ function addToCart(id, name, price, showPrice) {
    // Verifica se o item já está no carrinho
    const existingItem = cart.find(item => item.id === id);
    
    if (existingItem) {
      existingItem.quantity++;
    } else {
-     cart.push({ id, name, price, quantity: 1 });
+     cart.push({ id, name, price, showPrice, quantity: 1 });
    }
    
    // Atualiza o carrinho na interface
@@ -198,21 +196,30 @@ especificos.forEach((especifico) => {
 
  // Função para renderizar o carrinho na interface
  function renderCart() {
-   const cartElement = document.getElementById('cart');
+   const cartElement = document.getElementById('bar-car-produts');
    cartElement.innerHTML = ''; // Limpa o conteúdo do carrinho
    
    if (cart.length === 0) {
      cartElement.innerHTML = '<p>Carrinho vazio</p>';
    } else {
+     let value = 0
      cart.forEach(item => {
        const itemElement = document.createElement('div');
        itemElement.innerHTML = `
-         <div>
-           <span>${item.name} - R$${item.price} (${item.quantity})</span>
-           <button class="btn" onclick="removeFromCart('${item.id}')">Remover</button>
+         <div class="bar-car-produt">
+            <img src="./img/${item.id}.png" alt="${"produto-carrinho"}">
+            <div class="info-produt-bar">
+                <p>${item.name}</p>
+                <h3>${item.showPrice}</h3>
+            </div>
          </div>
        `;
        cartElement.appendChild(itemElement);
+       value = value + item.price;
      });
+     const showValue = document.querySelector("#price-bar-car");
+     console.log(value)
+     showValue.innerText = value;
+     console.log(value)
    }
  }
