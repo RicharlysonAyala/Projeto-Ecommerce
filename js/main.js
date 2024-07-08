@@ -195,14 +195,15 @@ especificos.forEach((especifico) => {
  }
 
  // Função para renderizar o carrinho na interface
+ const showValue = document.querySelector("#price-bar-car");
  function renderCart() {
    const cartElement = document.getElementById('bar-car-produts');
    cartElement.innerHTML = ''; // Limpa o conteúdo do carrinho
-   
+   let value = 0
    if (cart.length === 0) {
-     cartElement.innerHTML = '<p>Carrinho vazio</p>';
+     cartElement.innerHTML = '<p class="bar-car-not-found">Nenhum produto no carrinho</p>';
+     showValue.innerText = "00,00";
    } else {
-     let value = 0
      cart.forEach(item => {
        const itemElement = document.createElement('div');
        itemElement.innerHTML = `
@@ -212,14 +213,17 @@ especificos.forEach((especifico) => {
                 <p>${item.name}</p>
                 <h3>${item.showPrice}</h3>
             </div>
+            <button class="btn" onclick="removeFromCart('${item.id}')">Remover</button>
          </div>
        `;
        cartElement.appendChild(itemElement);
+       console.log(cart[0])
+       if (cart[0] === "") {
+        console.log("A")
+       }
        value = value + item.price;
      });
-     const showValue = document.querySelector("#price-bar-car");
-     console.log(value)
+     console.log(cart[0])
      showValue.innerText = value;
-     console.log(value)
    }
  }
