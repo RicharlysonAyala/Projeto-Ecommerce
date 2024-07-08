@@ -56,8 +56,13 @@
     right: 18px;
     color: #444;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     cursor: pointer;
+    transition: 0.4s;
+}
+
+#fechar:hover {
+    opacity: 0.8;
 }
 
 #bar-car h2 {
@@ -149,6 +154,20 @@
     background-color: #0c2e66;
 }
 
+.btn {
+    position: absolute;
+    background-color: transparent;
+    color: #444;
+    font-weight: bold;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: 0.4s;
+    right: 30px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
 
 /* Navbar */
 header {
