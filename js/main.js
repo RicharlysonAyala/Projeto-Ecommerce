@@ -230,3 +230,18 @@ especificos.forEach((especifico) => {
      showValue.innerText = value;
    };
  };
+
+
+// Lado Esquerdo função fixed
+const ladoEsquerdo = document.querySelector("#lado-esquerdo");
+
+window.addEventListener("scroll", () => {
+    if (scrollY >= 219) {
+        ladoEsquerdo.style.position = "fixed";
+        ladoEsquerdo.style.width = "17%";
+        ladoEsquerdo.style.top = "0";
+    } else {
+        ladoEsquerdo.style.position = "absolute";
+        ladoEsquerdo.style.width = "100%";
+    }
+});
