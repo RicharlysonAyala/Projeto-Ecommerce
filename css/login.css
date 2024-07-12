@@ -9,7 +9,7 @@
 }
 
 main {
-    margin: 6rem auto 9.5rem;
+    margin: 3.5rem auto 0;
     display: flex;
     justify-content: center;
     gap: 3rem;
@@ -106,12 +106,10 @@ main form input[type="password"]:focus {
 /* footer */
 footer {
     background-color: #113a7a;
-    margin-top: 7rem;
     color: #fafafa;
-}
-
-.logo-footer {
-    padding: 1rem 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
 }
 
 #footer-contatos {
@@ -145,6 +143,6 @@ footer {
 }
 
 #footer-copyright {
-    padding: 1rem 0;
+    padding-bottom: 1rem;
     text-align: center;
 }
