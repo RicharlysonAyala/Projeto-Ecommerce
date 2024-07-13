@@ -230,3 +230,32 @@ especificos.forEach((especifico) => {
      showValue.innerText = value;
    };
  };
+
+ // Variável para contar a quantidade de produtos no carrinho
+let cartCount = 0;
+
+// Função para adicionar um produto ao carrinho
+function adicionarAoCarrinho() {
+    cartCount++; // Incrementa o contador
+    atualizarIconeCarrinho(); // Chama a função para atualizar o ícone do carrinho
+}
+
+let cartCont = 0;
+
+// Função para atualizar o ícone do carrinho com o contador atualizado
+function atualizarIconeCarrinho() {
+    const cartIcon = document.getElementById('bolinha-carrinho');
+    const cartCountSpan = document.getElementById('cart-count');
+
+    // Atualiza o texto do contador
+    cartCountSpan.textContent = cartCount;
+
+    // Adiciona uma classe de destaque (opcional)
+    cartIcon.classList.add('highlight'); // Adicione uma classe para destacar visualmente o ícone do carrinho
+    
+    // Remova a classe após um curto período de tempo para remover o destaque
+    setTimeout(() => {
+        cartIcon.classList.remove('highlight');
+    }, 1000); // 1000ms = 1 segundo, ajuste conforme necessário
+}
+
