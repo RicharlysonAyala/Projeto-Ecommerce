@@ -349,18 +349,22 @@ main {
     display: flex;
     margin-top: 4rem;
     margin: 3rem 2rem 0 1rem;
-}
-
-#lado-esquerdo {
-    width: 20%;
+    gap: 5rem;
 }
 
 #lado-direito {
     width: 80%;
 }
 
-
 /* Lado esquerdo */
+#fixed {
+    display: flex;
+    width: 18%;
+    position: relative;
+    background-color: #f6f6f6;
+    height: 110rem;
+}
+
 #lado-esquerdo {
     display: flex;
     flex-direction: column;
@@ -369,6 +373,9 @@ main {
     background: #f6f6f6;
     border-radius: 10px;
     margin-right: 4.5rem;
+    width: 100%;
+    position: absolute;
+    left: 1rem;
 }
 
 .especifico {
@@ -451,7 +458,7 @@ main {
 }
 
 .coracao-desejo.fa-heart {
-    color: #555;
+    color: rgba(255, 0, 0, 0.8);
     font-size: 1.3rem;
     padding: 6px;
 }
@@ -483,7 +490,7 @@ main {
 /* footer */
 footer {
     background-color: #113a7a;
-    margin-top: 7rem;
+    margin-top: 12rem;
     color: #fafafa;
 }
 

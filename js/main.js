@@ -231,6 +231,7 @@ especificos.forEach((especifico) => {
    };
  };
 
+<<<<<<< HEAD
  // Variável para contar a quantidade de produtos no carrinho
 let cartCount = 0;
 
@@ -240,7 +241,7 @@ function adicionarAoCarrinho() {
     atualizarIconeCarrinho(); // Chama a função para atualizar o ícone do carrinho
 }
 
-let cartCont = 0;
+const cartCont = 0;
 
 // Função para atualizar o ícone do carrinho com o contador atualizado
 function atualizarIconeCarrinho() {
@@ -250,12 +251,28 @@ function atualizarIconeCarrinho() {
     // Atualiza o texto do contador
     cartCountSpan.textContent = cartCount;
 
-    // Adiciona uma classe de destaque (opcional)
-    cartIcon.classList.add('highlight'); // Adicione uma classe para destacar visualmente o ícone do carrinho
+    // Adiciona uma classe de destaque
+    cartIcon.classList.add('highlight'); // uma classe para destacar o ícone do carrinho
     
-    // Remova a classe após um curto período de tempo para remover o destaque
+    // Remove a classe depois de um período de tempo para remover o destaque
     setTimeout(() => {
         cartIcon.classList.remove('highlight');
     }, 1000); // 1000ms = 1 segundo, ajuste conforme necessário
 }
 
+=======
+
+// Lado Esquerdo função fixed
+const ladoEsquerdo = document.querySelector("#lado-esquerdo");
+
+window.addEventListener("scroll", () => {
+    if (scrollY >= 219) {
+        ladoEsquerdo.style.position = "fixed";
+        ladoEsquerdo.style.width = "17%";
+        ladoEsquerdo.style.top = "0";
+    } else {
+        ladoEsquerdo.style.position = "absolute";
+        ladoEsquerdo.style.width = "100%";
+    }
+});
+>>>>>>> 59187662b2b7c0203385a6a077979251259df247
