@@ -257,7 +257,7 @@ function atualizarIconeCarrinho() {
     // Remove a classe depois de um período de tempo para remover o destaque
     setTimeout(() => {
         cartIcon.classList.remove('highlight');
-    }, 1000); // 1000ms = 1 segundo, ajuste conforme necessário
+    }, 1000); // 1000ms = 1 segundo
 }
 
 =======
