@@ -231,6 +231,36 @@ especificos.forEach((especifico) => {
    };
  };
 
+<<<<<<< HEAD
+ // Variável para contar a quantidade de produtos no carrinho
+let cartCount = 0;
+
+// Função para adicionar um produto ao carrinho
+function adicionarAoCarrinho() {
+    cartCount++; // Incrementa o contador
+    atualizarIconeCarrinho(); // Chama a função para atualizar o ícone do carrinho
+}
+
+const cartCont = 0;
+
+// Função para atualizar o ícone do carrinho com o contador atualizado
+function atualizarIconeCarrinho() {
+    const cartIcon = document.getElementById('bolinha-carrinho');
+    const cartCountSpan = document.getElementById('cart-count');
+
+    // Atualiza o texto do contador
+    cartCountSpan.textContent = cartCount;
+
+    // Adiciona uma classe de destaque
+    cartIcon.classList.add('highlight'); // uma classe para destacar o ícone do carrinho
+    
+    // Remove a classe depois de um período de tempo para remover o destaque
+    setTimeout(() => {
+        cartIcon.classList.remove('highlight');
+    }, 1000); // 1000ms = 1 segundo
+}
+
+=======
 
 // Lado Esquerdo função fixed
 const ladoEsquerdo = document.querySelector("#lado-esquerdo");
@@ -245,3 +275,4 @@ window.addEventListener("scroll", () => {
         ladoEsquerdo.style.width = "100%";
     }
 });
+>>>>>>> 59187662b2b7c0203385a6a077979251259df247
