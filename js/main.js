@@ -128,7 +128,7 @@ especificos.forEach((especifico) => {
     especifico.addEventListener("click", (e) => {
         switch (e.target.id) {
             case "caro":
-                caroChecked.style.color = "#113a7a"
+                caroChecked.style.color = "red"
                 baratoChecked.style.color = "#000"
                 pilulasChecked.style.color = "#000"
                 kitsChecked.style.color = "#000"
@@ -137,7 +137,7 @@ especificos.forEach((especifico) => {
                 allProdutos.innerHTML = "";
                 return
             case "barato":
-                baratoChecked.style.color = "#113a7a"
+                baratoChecked.style.color = "red"
                 caroChecked.style.color = "#000"
                 pilulasChecked.style.color = "#000"
                 kitsChecked.style.color = "#000"
