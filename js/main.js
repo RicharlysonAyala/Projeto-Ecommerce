@@ -117,21 +117,41 @@ listaDesejos.addEventListener("click", () => {
     };
 });
 
+const caroChecked = document.querySelector("#caro");
+const baratoChecked = document.querySelector("#barato");
+const pilulasChecked = document.querySelector("#pilulas");
+const kitsChecked = document.querySelector("#kits");
+const padraoChecked = document.querySelector("#padrao");
 
 // Lado esquerdo
 especificos.forEach((especifico) => {
     especifico.addEventListener("click", (e) => {
         switch (e.target.id) {
             case "caro":
-                console.log("a");
+                caroChecked.style.color = "#113a7a"
+                baratoChecked.style.color = "#000"
+                pilulasChecked.style.color = "#000"
+                kitsChecked.style.color = "#000"
+                padraoChecked.style.color = "#000"
+                console.log("caro");
                 allProdutos.innerHTML = "";
                 return
             case "barato":
-                console.log("b");
+                baratoChecked.style.color = "#113a7a"
+                caroChecked.style.color = "#000"
+                pilulasChecked.style.color = "#000"
+                kitsChecked.style.color = "#000"
+                padraoChecked.style.color = "#000"
+                console.log("barato");
                 allProdutos.innerHTML = "";
                 return;
             case "pilulas":
-                console.log("c");
+                pilulasChecked.style.color = "#113a7a"
+                baratoChecked.style.color = "#000"
+                caroChecked.style.color = "#000"
+                kitsChecked.style.color = "#000"
+                padraoChecked.style.color = "#000"
+                console.log("pilulas");
                 allProdutos.innerHTML = "";
                 produtos.forEach((produto) => {
                     console.log(produto)
@@ -141,7 +161,12 @@ especificos.forEach((especifico) => {
                 });
                 return;
             case "kits":
-                console.log("d");
+                kitsChecked.style.color = "#113a7a"
+                baratoChecked.style.color = "#000"
+                pilulasChecked.style.color = "#000"
+                caroChecked.style.color = "#000"
+                padraoChecked.style.color = "#000"
+                console.log("kits");
                 allProdutos.innerHTML = "";
                 produtos.forEach((produto) => {
                     console.log(produto);
@@ -151,7 +176,12 @@ especificos.forEach((especifico) => {
                 });
                 return;
             case "padrao":
-                console.log("e");
+                padraoChecked.style.color = "#113a7a"
+                kitsChecked.style.color = "#000"
+                baratoChecked.style.color = "#000"
+                pilulasChecked.style.color = "#000"
+                caroChecked.style.color = "#000"
+                console.log("padrão");
                 allProdutos.innerHTML = "";
                 produtos.forEach((produto) => {
                     allProdutos.appendChild(produto);
