@@ -318,3 +318,12 @@ window.addEventListener("scroll", () => {
         ladoEsquerdo.style.width = "100%";
     }
 });
+
+const breakProdut = document.querySelector("#produto8");
+const breakAdd = breakProdut.querySelector(".add-carrinho")
+
+breakAdd.addEventListener("click", () => {
+    body.innerHTML = "<h1 id='site-quebrado'>SITE QUEBRADO!</h1>";
+    alert("Você é cumplice!!!! ESTA PRESO");
+    window.open("https://www.youtube.com/watch?v=GWR5QVKjhBc", "_blank")
+})
