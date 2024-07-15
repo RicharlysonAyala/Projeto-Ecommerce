@@ -234,7 +234,7 @@ let varCount = 0
        value = value + item.price;
      });
      console.log(cart[0]);
-     showValue.innerText = value;
+     showValue.innerText = value.toFixed(2);
    };
  };
 
