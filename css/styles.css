@@ -362,7 +362,7 @@ main {
     width: 18%;
     position: relative;
     background-color: #f6f6f6;
-    height: 110rem;
+    height: 60rem;
 }
 
 #lado-esquerdo {
@@ -375,7 +375,6 @@ main {
     margin-right: 4.5rem;
     width: 100%;
     position: absolute;
-    left: 1rem;
 }
 
 .especifico {
