@@ -122,6 +122,7 @@ const baratoChecked = document.querySelector("#barato");
 const pilulasChecked = document.querySelector("#pilulas");
 const kitsChecked = document.querySelector("#kits");
 const padraoChecked = document.querySelector("#padrao");
+const vlandiaChecked = document.querySelector("#vlandia");
 
 // Lado esquerdo
 especificos.forEach((especifico) => {
@@ -133,6 +134,7 @@ especificos.forEach((especifico) => {
                 pilulasChecked.style.color = "#000"
                 kitsChecked.style.color = "#000"
                 padraoChecked.style.color = "#000"
+                vlandiaChecked.style.color = "#000"
                 console.log("caro");
                 allProdutos.innerHTML = "";
                 return
@@ -142,6 +144,7 @@ especificos.forEach((especifico) => {
                 pilulasChecked.style.color = "#000"
                 kitsChecked.style.color = "#000"
                 padraoChecked.style.color = "#000"
+                vlandiaChecked.style.color = "#000"
                 console.log("barato");
                 allProdutos.innerHTML = "";
                 return;
@@ -151,6 +154,7 @@ especificos.forEach((especifico) => {
                 caroChecked.style.color = "#000"
                 kitsChecked.style.color = "#000"
                 padraoChecked.style.color = "#000"
+                vlandiaChecked.style.color = "#000"
                 console.log("pilulas");
                 allProdutos.innerHTML = "";
                 produtos.forEach((produto) => {
@@ -166,6 +170,7 @@ especificos.forEach((especifico) => {
                 pilulasChecked.style.color = "#000"
                 caroChecked.style.color = "#000"
                 padraoChecked.style.color = "#000"
+                vlandiaChecked.style.color = "#000"
                 console.log("kits");
                 allProdutos.innerHTML = "";
                 produtos.forEach((produto) => {
@@ -175,12 +180,29 @@ especificos.forEach((especifico) => {
                     };
                 });
                 return;
+            case "vlandia":
+                vlandiaChecked.style.color = "#113a7a"
+                kitsChecked.style.color = "#000"
+                baratoChecked.style.color = "#000"
+                pilulasChecked.style.color = "#000"
+                caroChecked.style.color = "#000"
+                padraoChecked.style.color = "#000"
+                console.log("vlandia");
+                allProdutos.innerHTML = "";
+                produtos.forEach((produto) => {
+                    console.log(produto);
+                    if (produto.classList.contains("vlandia")) {
+                        allProdutos.appendChild(produto);
+                    };
+                });
+                return
             case "padrao":
                 padraoChecked.style.color = "#113a7a"
                 kitsChecked.style.color = "#000"
                 baratoChecked.style.color = "#000"
                 pilulasChecked.style.color = "#000"
                 caroChecked.style.color = "#000"
+                vlandiaChecked.style.color = "#000"
                 console.log("padrão");
                 allProdutos.innerHTML = "";
                 produtos.forEach((produto) => {
